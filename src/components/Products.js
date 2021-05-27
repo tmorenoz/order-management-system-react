@@ -70,10 +70,9 @@ const Products = () => {
 
                                 <tr key={elemento.id}>
                                     <th scope="row">{i}</th>
-                                    <td>{elemento.custumer}</td>
-                                    <td>{elemento.condition}</td>
-                                    <td>{elemento.date}</td>
-                                    <td>{elemento.totalTaxes}</td>
+                                    <td>{elemento.name}</td>
+                                    <td>{elemento.categorry}</td>
+                                    <td>{elemento.price}</td>
                                     <td>
                                         <button className="btn btn-primary" onClick={()=>selectProduct(elemento, 'Editar')}>Edit</button>
                                     </td>
