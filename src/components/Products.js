@@ -58,7 +58,7 @@ const Products = () => {
                         <tr>
                             <th scope="col">N°</th>
                             <th scope="col">Name</th>
-                            <th scope="col">Categorry</th>
+                            <th scope="col">Category</th>
                             <th scope="col">Price</th>
                             <th scope="col">Status</th>
                             <th scope="col">Actions</th>
@@ -71,8 +71,9 @@ const Products = () => {
                                 <tr key={elemento.id}>
                                     <th scope="row">{i}</th>
                                     <td>{elemento.name}</td>
-                                    <td>{elemento.categorry}</td>
+                                    <td>{elemento.category}</td>
                                     <td>{elemento.price}</td>
+                                    <td>{elemento.status}</td>
                                     <td>
                                         <button className="btn btn-primary" onClick={()=>selectProduct(elemento, 'Editar')}>Edit</button>
                                     </td>
